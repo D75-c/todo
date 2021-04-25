@@ -1,38 +1,70 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+}
+.item {
+  color: #8a8a8a;
+  list-style: none;
+  border-bottom: 1px solid #8a8a8a;
+  text-align: left;
+  padding: 10px 5px 5px 5px;
+  min-height: 30px;
+  word-wrap: break-word;
+  hyphens: none;
+}
+.item:last-child {
+  border-bottom: none;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+.listContainer {
+  padding: 0 15px;
+}
+
+.textInput {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  font-size: 16px;
+}
+
+.superButton {
+  border-radius: 7px;
+  padding: 7px 12px;
+  color: aliceblue;
+  font-size: 16px;
+  background-color: #3c6ffb;
+  margin: 2px 5px;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  padding: 3px 10px;
+
+}
+.commonContainer {
+  border-radius: 10px;
+  background-color: aliceblue;
+  box-shadow: 2px 2px 16px midnightblue;
+}
+.oMyBox {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  margin-bottom: 10px;
+  padding: 5px;
+  box-sizing: border-box;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
